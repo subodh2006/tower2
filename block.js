@@ -1,8 +1,8 @@
-class Box {
+class Block {
     constructor(x, y, width, height) {
       var options = {
         'isStatic': false,
-          'restitution':0.3,
+          'restitution':0.2,
           'friction':1.0,
           'density':1.0
       }
@@ -21,7 +21,7 @@ class Box {
       rectMode(CENTER);
       strokeWeight(1);
       stroke("black");
-      fill("pink");
+      fill("blue");
       rect(0, 0, this.width, this.height);
       pop();
     }
